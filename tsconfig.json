@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // директория в которую билдится, в данном случае можно игнорировать так как это делается средствами webpack
+    "outDir": "./dist/",
+    // запрещаем any, без прямого объявления
+    "noImplicitAny": true,
+    // es версия из которой мы компилим
+    "module": "esnext",
+    // es версия в которую мы компилим
+    "target": "es5",
+    // поддержка jsx react синтаксиса, чтобы можно было добавлять разметку в код
+    "jsx": "react-jsx",
+    // позволяет кимпилятору обрабатывать не только ts но и js файлы
+    "allowJs": true,
+    // определяет какие импорты будут node или classic, в 99% случаев используется node
+    "moduleResolution": "node",
+    // позволяет использовать common js синтаксис с помощью import вместо require()
+    // и export вместо module.export
+    "esModuleInterop": true,
+    //  флаг позволяет использовать обычные импорты без *
+    //  import * as React from 'react' теперь можно писать как import React from 'react'
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
+
+
