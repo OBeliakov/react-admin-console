@@ -19,7 +19,11 @@
     "esModuleInterop": true,
     //  флаг позволяет использовать обычные импорты без *
     //  import * as React from 'react' теперь можно писать как import React from 'react'
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
   "ts-node": {
     "compilerOptions": {
